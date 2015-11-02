@@ -102,3 +102,7 @@ from django.conf.urls.static import static # New Import
 
 if not settings.DEBUG:
         urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Absolute path to the media directory
